@@ -1,15 +1,22 @@
 import requests
 import json
 
-base_url = 'http://192.168.2.161:8080/api/v1/products'
+base_url = 'http://192.168.0.85:8080/api/v1/products'
 headers = {'Content-Type': 'application/json'}
 
 # Lista de dados para enviar em cada solicitação
 data_list = [
-    # {"category": 1,  "description": "Pão, Salada, Bife, Salada, Bacon",  "name": "X bacon",  "price": 16,  "qntd": 0,  "url": "dawd"},
-    {"category": 1, "id": 2,  "description": "Pão, Salada, Bife, Salada, Bacon",  "name": "X Salada",  "price": 12,  "qntd": 0,  "url": "dawd", "visible": False},
-    {"category": 1, "id": 3, "description": "Pão, Salada, Bife, Salada, Bacon",  "name": "X Zunto",  "price": 18,  "qntd": 0,  "url": "dawd", "visible": True},
-    # {"category": 2,  "description": "Hamburguer com bacon",  "name": "X bacon",  "price": 16,  "qntd": 0,  "url": "string"},
+    {"id": 2,  "visible": False},
+    {"id": 5,  "visible": False},
+    {"id": 7,  "visible": False},
+    {"id": 8,  "visible": False},
+    {"id": 9,  "visible": False},
+    {"id": 12,  "visible": False},
+    {"id": 15,  "visible": False},
+    {"id": 16,  "visible": False},
+    {"id": 22,  "visible": False},
+    {"id": 33,  "visible": False},
+    {"id": 40,  "visible": False},
 ]
 
 for data in data_list:
